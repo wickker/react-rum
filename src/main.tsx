@@ -15,8 +15,8 @@ datafluxRum.init({
     sessionSampleRate: 100,
     sessionReplaySampleRate: 100,
     compressIntakeRequests: true,
-    trackInteractions: true,
-    traceType: 'ddtrace', // Not required, default to ddtrace. Currently, it supports 6 types: ddtrace, zipkin, skywalking_v3, jaeger, zipkin_single_header and w3c_traceparent.
+    trackUserInteractions: true,
+    // traceType: 'ddtrace', // Not required, default to ddtrace. Currently, it supports 6 types: ddtrace, zipkin, skywalking_v3, jaeger, zipkin_single_header and w3c_traceparent.
     allowedTracingOrigins: ['https://dian.hicloud.guru', 'https://react-rum-5529d.sevalla.page'],  // Not required; allow all requests to be injected into the header required by the trace collector. It can be the origin of the request or it can be regular.
 });
 
