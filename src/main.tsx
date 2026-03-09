@@ -16,6 +16,7 @@ datafluxRum.init({
     sessionReplaySampleRate: 100,
     compressIntakeRequests: true,
     trackUserInteractions: true,
+    allowedTracingOrigins: ['https://dian.hicloud.guru']
 });
 
 datafluxRum.startSessionReplayRecording()
